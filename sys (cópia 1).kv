@@ -1,0 +1,40 @@
+<Implementa>:
+    BoxLayout:
+        orientation:"vertical"
+        cols:1 
+        rows:2
+        padding:5
+    Button:
+        BoxLayout:
+            orientation:"horizontal"
+            pos_hint:{'top': 0.1}
+            size_hint:1,None
+            height:'38dp'
+            ToggleButton:
+                text: "Arquivo"
+                
+            Button:
+                text: 'Editar'
+                id: editar
+                on_press: root.Editar()
+            Button:
+                text: 'Exibir'
+            Button:
+                text: 'Relatorio'
+            Button:
+                text: 'Configurancao'
+            Button:
+                text: 'Manuntencao'
+            
+        GridLayout:
+            cols:1
+            rows:1
+            size_hint:1,1
+            Image:
+                source:"/home/greg/Imagens/logo.png"
+        Label:
+            size_hint:1,None
+            height:'38dp'
+            text:"status"
+            
+            
